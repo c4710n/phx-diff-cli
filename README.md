@@ -1,5 +1,7 @@
 # phx-diff-cli
 
+CLI alternative for [PhoenixDiff](https://www.phoenixdiff.org/).
+
 ## Usage
 
 Generate sample apps by using `phx_new`:
