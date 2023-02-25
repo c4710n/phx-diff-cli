@@ -14,6 +14,7 @@
           buildInputs = [
             erlangR24
             beam.packages.erlangR24.elixir_1_14
+            delta
           ]
           ++ lib.optionals stdenv.isLinux [
             # For ExUnit Notifier on Linux.

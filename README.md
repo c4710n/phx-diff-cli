@@ -20,7 +20,11 @@ $ diff -r demo-1.6.0-umbrella demo-1.6.2_umbrella
 Or:
 
 ```sh
-$ delta demo-1.6.0-umbrella demo-1.6.2_umbrella
+# use light theme
+$ delta --light demo-1.6.0-umbrella demo-1.6.2_umbrella
+
+# use dark theme
+$ delta --dark demo-1.6.0-umbrella demo-1.6.2_umbrella
 ```
 
 ## License
