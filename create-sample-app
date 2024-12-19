@@ -6,6 +6,7 @@ TEMP_DIR=${PWD}/temp
 APP_NAME=demo
 
 VERSION=$1
+
 DIR_NAME=${APP_NAME}-${VERSION}
 export MIX_HOME=${TEMP_DIR}/home-for-phx_new_${VERSION}/mix
 export HEX_HOME=${TEMP_DIR}/home-for-phx_new_${VERSION}/hex
@@ -17,6 +18,7 @@ echo "Install phx_new for ${DIR_NAME}..."
 mix archive.install hex phx_new "${VERSION}" --force
 
 echo "Generating ${DIR_NAME}..."
-mix phx.new "${DIR_NAME}" --app "${APP_NAME}"
+mix phx.new "${DIR_NAME}" --app "${APP_NAME}" --no-install
 
 unset MIX_HOME
+unset HEX_HOME
