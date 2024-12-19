@@ -1,30 +1,30 @@
 # phx-diff-cli
 
-CLI alternative for [PhoenixDiff](https://www.phoenixdiff.org/).
+The CLI alternative for [PhoenixDiff](https://www.phoenixdiff.org/).
 
 ## Usage
 
-Generate sample apps by using `phx_new`:
+Create sample apps by using `phx_new`:
 
-```sh
-$ ./create-sample-app 1.7.0-rc.3
-$ ./create-sample-app 1.7.0
+```console
+$ ./create-sample-app 1.7.10
+$ ./create-sample-app 1.7.11
 ```
 
 Diff generated samples with your preferred diff tool:
 
-```sh
-$ diff -r demo-1.7.0-rc.3 demo-1.7.0
+```console
+$ diff -r demo-1.7.10 demo-1.7.11
 ```
 
 Or:
 
-```sh
+```console
 # use light theme
-$ delta --light demo-1.7.0-rc.3 demo-1.7.0
+$ delta --light demo-1.7.10 demo-1.7.11
 
 # use dark theme
-$ delta --dark demo-1.7.0-rc.3 demo-1.7.0
+$ delta --dark demo-1.7.10 demo-1.7.11
 ```
 
 ## License
